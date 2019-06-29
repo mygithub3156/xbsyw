@@ -1,0 +1,1749 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>西部摄影网</title>
+	<link rel="stylesheet" href="normalize_zh.css">
+	<style>
+	   		ul{list-style:none;margin:0;padding:0}
+			a{text-decoration:none;}
+			body{background:#f8f9fa;}
+			a.a8:hover{background:#999;}
+			a.a7:hover{background:#999}
+	   /*表头*/
+			.header_bg_active{
+				width:100%;height:70px;
+			 	background:#fff;
+			    position:fixed;
+			    top:0;left:0;
+				z-index:9;
+			    box-shadow:0 0 5px 1px #ddd;
+			}
+			.nav_wide{width:1800px;height:70px;margin:0 auto;}
+	   		.nav_left{width:752px;height:70px;float:left;}
+	   		.nav_right{height:70px;float:right; }
+		 	.nav_logo{
+				width:90px;height:32px;
+				line-height:70px;
+				float:left;
+				margin:11px 60px 0 0;
+		  }
+		 	.nav_logo img{
+				height:50px;
+				display:block;
+		  }
+			.header_bg_nav_wide ul{
+				height:70px;
+				float:left;
+				margin:0;
+				line-height:70px;
+		  }
+			.header_bg_nav_wide>ul>li{
+				position:relative;
+				display:block;
+				float:left;
+		  }
+		 	.header_bg_nav_wide>ul>li>a{
+				display:block;
+				font-size:16px;
+				color:#666;
+				padding:0 20px;margin:0;
+		 }
+	   		.header_bg_nav_wide>ul>li>a:hover{background:#ddd;}
+	   	 	.nav_right .pro_search_input{
+				width:195px;height:39px;
+				padding:0;
+				display:block;
+				float:left;
+				line-height:39px;
+				background:#ddd;
+				outline:none;border:0;
+				padding-left:15px;
+        		color:#666;
+				border-radius:5px 0 0 5px;
+				font-size:16px;
+			}
+			.pro_search_but{
+				width:29px;height:39px;
+				background:#ddd url(./picture/search2.png) no-repeat center;
+				background-size:80%;
+        		float:left;
+				border-radius:0 5px 5px 0;
+			}
+			.nav_right ul{
+				height:70px;
+			  	line-height:70px;
+				margin:0;padding:0;
+			}
+			.nav_right ul li{height:70px;float:left;}
+	   		 a.dl,a.zc{
+				color:#666;
+				font-size:18px;
+				padding:0;
+				border:0;
+				margin-left:20px;
+			}
+     		.pro_search_input ,.pro_search_but{margin-top:16px;}
+			.lcon_div{
+				width:20px;height:70px;
+				float:left;
+				background:url(./picture/top_coin1.png) no-repeat center;
+				margin:0 5px 0 40px;
+			}
+			p.xcx{
+			 	float:left;
+				color:#333;
+				font-size:18px;
+				margin:0;padding:0;
+			}
+			div.yctlogo{
+				width:95px;height:100px;
+				display:none;
+				position:absolute;
+				top:75px;right:40px;
+				background:#fff;
+				text-align:center;
+				border-radius:4px;
+			}
+			li.l1:hover div.yctlogo{display:block;}
+			div.yctlogo img{width:80px;height:80px;margin:10px 0;}
+			div.btcd1{
+				width:200px;height:270px;
+				background:#fff;
+				border-top:4px solid #000;
+				position:absolute;
+				top:65px;left:0;
+				border-radius:4px;
+				z-index:999;
+				box-sizing:border-box;
+				display:none;
+			}
+			div.btcd1 li{
+				height:40px;width:180px;
+				padding-left:20px;
+				margin-top:4px;
+				line-height:40px;
+			}
+			div.btcd1 ul li a,div.btcd2 ul li a{color:#666;width:100%;display:inline-block;}
+			div.btcd1 ul li:hover{background:#ddd;}
+			li.zp:hover div.btcd1{display:block;}
+			div.btcd2{
+				width:200px;height:230px;
+				background:#fff;
+				border-top:4px solid #000;
+				position:absolute;
+				top:65px;left:0;
+				border-radius:4px;
+				z-index:999;
+				box-sizing:border-box;
+				display:none;
+			}
+			div.btcd2 li{
+				height:40px;width:180px;
+				padding-left:20px;
+				margin-top:4px;
+				line-height:40px;
+			}
+			div.btcd2 ul li:hover{background:#ddd;}
+			li.ly:hover div.btcd2{display:block;}
+
+            /*表身一 */
+			div.slide{
+				width:100%;height:660px;
+				background:url(./picture/20190513113516_47287.jpg) no-repeat;
+			    z-index:10;
+			}
+			div.slide a{display:block;width:100%;height:100%;}
+			/* 表身二*/
+			div.scro{
+				width:1350px;height:50px;
+				margin:0 auto;
+				box-sizing:content-box;
+				padding-top:62px;
+			}
+			div.tg{width:105px;float:left;}
+			div.xw{
+				width:1245px;
+				float:left;
+			}
+			a.tga{font-size:20px;color:#000;}
+			a.xwa{font-size:20px;color:#666;}
+			/* 表身三 */
+			div.wl_indexdt_pic{width:100%;margin-top:60px;}
+			div.wl_indexdt_titlt1,div.wl_indexdt_titlt2{
+				width:1250px;
+				text-align:center;
+				font-size:25px;
+				color:#333;
+				margin:0 auto;
+			}
+			div.wl_indexdt_titlt2{font-size:15px;color:#666;}
+			.wl_indexdt_pic a{margin:0;padding:0;}
+			div.pic{
+				width:420px;height:283px;
+				display:inline-block;
+				border:1px solid #ddd;
+				border-bottom:none;
+				overflow:hidden;
+				margin-bottom:-3px;
+				transition:1s;
+			}
+			div.xg1{width:422px;height:335px;display: inline-block;margin-right:10px;}
+			div.pic img{width:362px;height:280px;transition:1s;}
+			div.lbt{
+				max-width:100%;
+				min-width:1750px;
+				text-align:center;
+				margin:0 auto;
+				margin-top:50px;
+			}
+			div.lbt::after{content:"";display:block;clear:both;}
+			div.ms{
+				width:400px;height:48px;
+				border:1px solid #ddd;
+				border-top:none;
+				padding-left:20px;
+
+				text-align:left;
+				line-height:45px;
+			}
+			.wl_indexdt_pic a{color:#000;}
+			div.xg1:hover img{transform:scale(1.2);}
+      /* 表身四 */
+			div.photo_wl_box{
+				width:1350px;
+				margin:0 auto;
+				padding:80px 0 60px 0;
+			}
+			p.wp1{color:#333;font-size:25px;}
+			p.wp2{color:#666;font-size:14px;}
+			p.ppp1{color:#333;text-align:center;font-size:25px;margin:0;}
+			p.ppp2{color:#666;text-align:center;font-size:14px;}
+	        div.gallery_wl_phtobox{width:100%;margin-top:40px;position:relative;}
+			div.gallery_wl_phto_pic{
+				width:326px;height:212px;
+				background:#d9dbe0;
+				float:left;
+				text-align:center;
+				margin:3px 5px;
+				position:relative;
+			}
+
+			div.photo_wl_box::after{content:"";display:block;clear:both;}
+			div.gallery_wl_phto_pic img{width:331px;height:214px;}
+			div.gallery_wl_phto_pic p{
+				margin:0;padding:0;
+				position:absolute;
+				top:13px;left:13px;
+				color:#fff;
+				font-size:13px;
+			}
+			div.div1{
+				width:326px;
+				position:absolute;
+				top:220px;left:1px;
+				transition:0.5s;
+				opacity:0;
+			}
+			div.gallery_wl_phto_pic:hover div.div1{transform:translateY(-60px);opacity:1;}
+			div.t_left{
+				width:120px;height:50px;
+				line-height:50px;
+				float:left;
+			}
+			div.t1{line-height:65px;margin:0 10px;}
+			div.z1{color:#fff;font-size:14px;}
+			div.z1,div.t1{float:left;}
+			div.t1 img{width:30px;height:30px;border-radius:50%;}
+			div.t_right{
+				width:120px;height:50px;
+				line-height:50px;
+				float:right;
+			}
+			div.t2{
+				float:right;
+				width:30px;height:100%;
+				background:url(./picture/likem_coin.png) no-repeat center;
+			}
+			div.z2{float:right;margin-right:15px;color:#fff;}
+			div.t3{
+				float:right;
+				width:30px;height:100%;
+				background:url(./picture/collection_coin.png) no-repeat center;
+			}
+
+
+
+       /* 表身五 */
+			div.wu_zddiv{
+				width:100%;height:1250px;
+				margin-top:60px;
+                text-align:center;
+			}
+			div.wu_wai1:hover .wu_ck1{
+				background-color:#333;
+				border:2px solid #333;
+				color:#fff;
+			}
+			div.wu_zhd:hover .wu_ck1{
+				background-color:#333;
+				border:2px solid #333;
+				color:#fff;
+			}
+			div.wu_123:hover .wu_z5{
+				background-color:#333;
+				border:2px solid #333;
+				color:#fff;
+			}
+	  		div.wu_xg:hover .wu_ck1{
+				 background-color:#333;
+				 border:2px solid #333;
+				 color:#fff;
+	  		}
+			div.wu_ydiv{
+				width:730px;height:100px;
+				text-align:center;
+				margin:0 auto;
+            }
+			div.wu_ediv{
+				width:1350px;height:1110px;
+                margin:0 auto;
+			}
+			div.wu_zt{
+				width:360px;height:240px;
+				margin-top:20px;
+				float:left;
+			}
+			div.wu_ediv .wu_gf{font-size:14px;margin:0 10px;}
+			div.wu_zt img{width:222px;height:240px;}
+			div.wu_zj{
+				width:500px;height:220px;
+				float:left;
+			}
+			div.wu_logo{float:left;border-radius:50%;}
+			div.wu_logo img{
+				width:30px;height:30px;
+				border-radius:50%;
+			}
+			p.p1{
+				width:310px;height:40px;
+				font-size:24px;color:#333;
+				line-height:40px;
+				margin:0;
+			}
+	  		 p.p2{
+		  	 	width:70px;height:42px;
+				font-size:14px;
+		 		color:#666;
+				line-height:42px;
+		  		margin:5px 0;
+			}
+			div.wu_t2,.wu_t3,.wu_t4,.wu_t5{
+				width:30px;height:30px;
+				float:left;
+				background:url(./picture/ridata_coin.png) no-repeat center;
+			}
+			div.wu_123{width:100%;height:260px;}
+			div.wu_z1,.wu_z2,.wu_z3,.wu_z4,.wu_gf{
+				float:left;
+				color:#999;
+				font-size:13px;
+				height:30px;
+				line-height:30px;
+			}
+			p.wu_pz1,p.wu_pz2{display:block;}
+			p.wu_pz1{width:235px;color:#333;font-size:24px;}
+			p.wu_pz2{width:70px;color:#666;font-size:14px;}
+			div.wu_t3{background:url(./picture/eye_coin.png) no-repeat center;margin-left:20px;}
+			div.wu_t4{
+				background:url(./picture/likem_coin.png) no-repeat center;margin-left:20px;
+				margin-right:5px;
+			}
+			div.wu_t5{
+				background:url(./picture/colle_coin.png) no-repeat center;margin-left:20px;
+				height:27px;margin:0 5px 0 5px;	
+			}
+			div.wu_xg{width:100%;height:100%;}
+			a.a1{color:#999;}
+            div.wu_z5,.wu_ck1{
+				width:120px;height:33px;
+				border:2px solid #999;
+				line-height:33px;
+				border-radius:20px;
+			}
+			div.wu_sdiv{
+				width:1350px;height:240px;
+                float:left;
+				margin:30px 0;
+			}
+			div.wu_z{
+				width:410px;height:130px;
+				float:left;
+			}
+			div.wu_y{
+				height:196px;
+				float:right;
+			}
+			div.wu_wai1{
+				height:275px;width:100%;
+      			float:left;
+			}
+		    div.wu_zt1{
+				height:240px;
+				float:left;
+				margin-right:40px;
+			}
+		    div.wu_zt1 img{width:360px;height:240px;}
+		    div.wu_yw1{
+				width:500px;
+				float:left;
+			}
+		    a.a5{color:#333;font-size:24px;}
+		    a.a6{color:#666;font-size:14px;}
+		    div.wu_logo1{
+				width:30px;height:30px;
+				background-color:rgba(255,255,255,0.5);
+                float:left;
+			}
+		    div.wu_logo1 img{width:30px;height:30px;border-radius:50%;}
+            div.wu_zhd{
+				width:100%;height:275px;
+				float:left;
+			}
+		    div.wu_zhdz{
+				width:70%;
+				float:left;
+			}
+		    a.zha1{color:#333;font-size:24px;}
+		    a.zha2{color:#666;font-size:14px;}
+		    div.wu_logo2{
+				width:30px;height:30px;
+				float:left;
+			}
+		    div.wu_logo2 img{width:30px;height:30px;border-radius:50%;}
+		    a.a7,a.a8{
+				width:48px;height:23px;
+				background:#464753;
+				color:#fff;
+				display:block;
+				border-radius:20px;
+				font-size:15px;
+				line-height:23px;
+				margin-right:10px;
+			}
+		  /*表身6*/
+ 			div.liu_zw{width:100%;}
+		    div.liu_l1{
+				width:1350px;height:500px;
+				margin:0 auto;
+			}
+		    div.liu_l2{
+				display:flex;
+				width:100%;height:310px;
+				margin-top:50px;
+				justify-content:space-between;
+			}
+		    a.a8{margin:10px 30px 0 0;}
+			div.liu_yd{widht:100%;}
+		    div.liu_ed{
+				width:1350px;
+				margin:0 auto;
+			}
+			p.liu_p2,p.qi_p2{color:#666;font-size:14px;}
+			p.qi_p1,p.liu_p1{color:#333;font-size:24px;}
+		   /*表身7*/
+			div.qi_yd{width:100%;height:997px;margin-top:120px;}
+		 	div.qi_ed{width:1350px;margin:0 auto;}
+			div.qi_ed .a1{
+				height:58px;
+				color:#333;font-size:18px;
+				margin:0 20px;
+				display:inline-block;
+				border-bottom:4px solid #fff;
+			}
+	   		div.qi_ed .a1:hover{border-bottom:4px solid #000;}
+			div.qi_sd1{
+				text-align:center;
+				margin:45px auto;
+				height:58px;
+				line-height:58px;
+			}
+			div.qi_sd{text-align:center;}
+			div.qi_wd{
+				width:100%:;height:750px;
+				text-align: center;
+				margin:0 auto;
+			}
+		    div.qi_wd .qi_i1{width:317px;height:211px;border-radius:4px 4px 0 0;}
+			div.qi_wd .qi_ld ul{list-style:none}
+			div.qi_qd{width:100%;position:relative;}
+			div.qi_bd{
+				position:absolute;
+				width:317px;height:50px;
+				display: inline-block;
+				left:0;top:160px;
+			}
+			div.qi_jd{
+				width:30px;height:30px;
+				border-radius:50%;
+				background: #fff;
+				margin:10px;
+				float:left;
+			}
+			img.qi_i2{width:100%;height:100%;border-radius:50%;}
+			img.qi_i2:hover{background:#ddd;}
+			div.qi_q1{height:52px;line-height:52px;float:left;}
+			p.qi_p3{margin:0;padding:0;color:#fff;font-size:14px;width:30px;}
+			div.qi_q2{width:50px;height:50px;float:right;}
+			div.qi_q3{
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				float:right;
+				margin-right: 5px;
+			}
+			div.qi_q3 span{
+				display:inline-block;
+				width:50px;
+				background:url(./picture/colle_coin.png) no-repeat left;
+				color:#fff;
+				text-align:center;
+				vertical-align: middle;
+			}
+			div.qi_q4{
+				height:35px;
+				position: absolute;
+				left:0;top:0;
+				line-height:35px;
+			}
+			div.qi_q4 p{
+				margin:0;
+				background:#0a1732;
+				color:#fff;
+				font-size:14px;
+				padding:0 15px;
+				border-radius:4px 4px 4px 0;
+			}
+			div.qi_q5{
+				width:297px;height:100px;
+				padding:10px;
+				display:inline-block;
+				position:relative;
+				background:#fff;
+			}
+	  		div.qi_qd:hover{box-shadow:0 5px 5px 1px #ddd; }
+	   		div.qi_q5 a{
+				width:275px;
+				color:#333;
+				position:absolute;
+				left:20px;top:10px;
+				font-size:16px;
+				text-align: left;
+			}
+	   		div.qi_q5 a span{
+				 height:28px;
+				 background:#ff6203;
+				 display:inline-block;
+				 padding:0 10px;
+				 font-size:14px;
+				 color:#fff;
+				 border-radius:4px;
+				 line-height:28px;
+			 }
+	   		div.qi_q5 a p{margin: 0;height:32px;}
+			div.qi_q5 a .b2{color:#f20808;font-size:22px;}
+			b.b1,b.b3{font-size:12px;color:#f20808;height:25px;}
+			p.qi_p5{
+				text-align:right;
+				font-size:12px;
+				color:#666;
+				float:right;
+				line-height:32px;
+			}
+			.qi_wd .qi_ld ul li{
+				width:23.51%;
+				height:370px;
+				display: inline-block;
+				margin:0 8px;
+			}
+			p.qi_p6{display:inline-block;}
+			/*表脚*/
+			div.bj_1{
+				width:100%;height:456px;
+				background:url("./picture/foot_bg.jpg");
+				border-top:1px solid #eceeef;
+			}
+			div.bj_2{
+				width:1350px;
+				margin:0 auto;
+				padding-top:80px;
+				padding-bottom:40px;
+			}
+			div.bj_4{
+				width:135px;height:170px;
+				text-align:center;
+				margin-top:40px;
+			}
+			div.bj_3{float:left;}
+			p.bj_p1{
+				width:135px;height:35px;
+				text-align:center;
+				line-height:35px;
+			}
+			div.bj_2 ul li{float:left;}
+			p.bj_p2{
+				width:303.75px;height:35px;
+				text-align:center;
+				color:#333;margin-bottom:20px;
+				line-height:35px;
+			}
+			p.bj_p3{
+				width:303.75px;height:39px;
+				text-align:center;
+				margin:0;color:#666;
+				line-height:39px;
+				font-size:14px;
+			}
+			div.bj_2::after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			div.bj_5{widht:100%;height:21px;}
+			div.bj_6{
+				width:1315px;height:21px;
+				margin:0 auto;
+				color:#666;
+			}
+		    span.s1,span.s2{float:right;}
+	 		span.s1{margin-right:30px;}
+			div.ygd{
+				width:70px;height:240px;
+				position:fixed;
+				right:20px;bottom:85px;
+			}
+			div.ygd1{position:relative;}
+	   		div.ygd div.ygd1 ul{
+				position:absolute;
+				right:0;bottom:-207;
+			}
+	  		div.ygd div.ygd1 ul li{margin-bottom:5px;}
+	   		div.ygd div.ygd1 ul li a{
+				width:44px;height:44px;
+				display:block;
+				background:#d9dbe0;
+				border-radius:6px;
+			}
+	   		div.ygd div.ygd1 ul li a:hover{background:#333;}
+	   		div.ygd div.ygd1 ul li a.aaa1:hover{background:#c0c1c3;}
+	   		span.ss1{
+				width:100%;height:100%;
+				display:block;
+				background:url(./picture/side_icon.png) no-repeat -132px 0px;
+				float:left;
+			}
+	  		span.ss2{
+				width:20px;height:20px;
+				display:block;
+				background: url(./picture/suspension-bg.png) no-repeat 0px 0px;
+				margin-top:12px;
+				margin-left:12px;
+				float:left;
+			}
+	 		span.ss3{
+				width:20px;height:20px;
+				display:block;
+		    	background: url(./picture/suspension-bg.png) no-repeat -26px 0px;
+		    	margin-top:12px;
+		    	margin-left:12px;
+		        float:left;
+	        }
+	   		span.ss4{
+		   	    width:20px;height:20px;
+		   		display:block;
+		   		background: url(./picture/suspension-bg.png) no-repeat 1px -25px;
+		   		margin-top:12px;
+		   		margin-left:12px;
+		   		float:left;
+	  		 }
+			div.yc_wx{
+				width:220px;height:170px;
+				background:#fff;
+				text-align:center;
+				padding-top:20px;
+				position:absolute;
+				right:60px;bottom:-90px;
+				border-radius:4px;
+				border:1px solid #d9dbe0;
+				display:none;
+			}
+			div.yc_wx img{width:120px;height:120px;}
+			li.wxlogo:hover div.yc_wx{display:block;}
+			div.ycdh{
+				width:220px;height:190px;
+				background:#fff;
+				position:absolute;
+				right:60px;bottom:-50px;
+				border-radius:4px;
+				border:1px solid #d9dbe0;
+				text-align:center;
+				display:none;
+			}
+			div.dh_t{
+				width:40px;height:40px;
+				background:#DCDCDC url(./picture/ridata_coin.png) no-repeat center;
+				border-radius:50%;
+				margin:20px 0 0 20px;
+			}
+			div.dh_z{
+				width:150px;height:110px;
+				border:1px solid #d9dbe0;
+				background:#F8F8FF;
+				border-radius:4px;
+				line-height:110px;
+				margin:0 0 20px 20px;
+			}
+			li.dh:hover div.ycdh{display:block;}
+			div.khqq{
+				width:225px;height:80px;
+				background:#fff;
+				border:1px solid #ddd;
+				position:absolute;
+				right:60px;bottom:110px;
+				text-align:center;
+				line-height:80px;
+				border-radius:4px;
+				display:none;
+			}
+			div.khqq p{margin:0;}
+			li.qq:hover div.khqq{display:block;}
+	</style>
+ </head>
+ <body>
+ 	<div class=""></div>
+   <!-- 表顶头-->
+		<div class="header_bg_active">
+			<div class="nav_wide">
+				<div class="nav_left">
+					<a href="#">
+						<div class="nav_logo">
+							<img src="./picture/logo.png" alt="">
+						</div>
+						<div class="header_bg_nav_wide">
+							<ul>
+								<li><a href="#">首页</a></li>
+								<li class="zp"><a href="#">作品</a>
+									<div class="btcd1">
+										<ul>
+											<li><a href="#">风光</a></li>
+											<li><a href="#">民俗</a></li>
+											<li><a href="#">动物</a></li>
+											<li><a href="#">在线摄展</a></li>
+											<li><a href="#">摄影景点</a></li>
+											<li><a href="#">人像</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">视频</a></li>
+								<li class="ly">
+									<a href="#">旅游</a>
+									<div class="btcd2">
+										<ul>
+											<li><a href="#">风光</a></li>
+											<li><a href="#">民俗</a></li>
+											<li><a href="#">动物</a></li>
+											<li><a href="#">在线摄展</a></li>
+											<li><a href="#">摄影景点</a></li>
+										</ul>
+									</div>
+								</li>
+								<li><a href="#">游记</a></li>
+								<li><a href="#">斗图</a></li>
+								<li><a href="#">申请摄影师</a></li>
+							</ul>	
+						</div>
+					</a>
+				</div>
+				<div class="nav_right">
+					<ul>
+						<li> 
+						  <input class="pro_search_input" type="text" placeholder="搜索">
+						  <div class="pro_search_but"></div>
+						<li>
+						  <a class="dl" href="#">登陆</a>
+						</li>
+						<li>
+						  <a class="zc" href="#">注册</a>
+						</li>
+						<li class="l1">
+							<a class="a_a1" href="#">
+								<div class="lcon_div"></div>
+								<p class="xcx">小程序</p>
+							</a>
+							<div class="yctlogo">
+								<img src="./picture/20190107094707_49630.png" alt=""/>
+							</div>
+						</li>
+
+					</ul>	
+				</div>
+			</div>
+
+		</div>
+
+   <!-- 表身一 -->
+	  <div class="slide">
+			<a href="#"></a>	
+		</div>
+    <!-- 表身二 -->
+		<div class="scro">
+			<div class="tg">
+				<a class="tga" href="#">最新通知:</a>
+			</div>
+			<div class="xw">
+				<a class="xwa" href="#">2019年西部风光摄影创作计划</a>
+			</div>
+		</div>
+		<!-- 表身三 -->
+		<div class="wl_indexdt_pic">
+				<div class="wl_indexdt_titlt1">
+					<p>今日<b>斗图获胜</b>作品展示</p>
+				</div>
+				<div class="wl_indexdt_titlt2">
+					<p>发现旅行之美，记录旅行点滴，保存美好回忆。把思想灌输，让灵魂融入，在这里展示最美好的自己</p>	
+				</div>
+            <div>
+				<div class="lbt">
+					<div class="xg1">
+						<div class="pic">
+							<a href="#"><img src="./picture/1552742492_03740.jpg" alt=""></a>
+						</div>
+						<div class="ms"><a href="#">城市夜景</a></div>
+					</div>
+					<div class="xg1">
+						<div class="pic">
+							<a href="#"><img src="./picture/20181228030554_95130.jpg" alt=""></a>
+						</div>
+						<div class="ms"><a href="">秋天的色彩</a></div>
+					</div>
+					<div class="xg1">
+						<div class="pic">
+							<a href="#"><img src="./picture/20181221034608_58304.jpg" alt=""></a>
+						</div>
+						<div class="ms"><a href="#">苍凉大地——阿里</a></div>
+					</div>
+					<div class="xg1">
+						<div class="pic">
+							<a href="#"><img src="./picture/20181221032002_14960.jpg" alt=""></a>
+						</div>
+						<div class="ms"><a href="#">金秋稻亚</a></div>
+					</div>
+                </div>
+			</div>
+        </div>
+		<!-- 表身四 -->			
+		<div class="photo_wl_box">
+			<p class="ppp1">摄影作品 构图风光</p>
+			<p class="ppp2">在这里，发现基于共同兴趣的同好；鼓励原创和分享精神；除了美好的摄影和技能，我们更在意影像背后价值观的认同。</p>
+				<div class="gallery_wl_phtobox">
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190613024011_26910.jpg" alt=""></a>
+						<p>虫趣:椿与蚂蚁同聚会</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190612023445_17300.jpg" alt=""></a>
+						<p>为夏荷赞美</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190611122245_51410.jpg" alt=""></a>
+						<p>绝活</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190611121919_65060.jpg" alt=""></a>
+						<p>祈祷</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190611121643_21727.jpg" alt=""></a>
+						<p>胡杨不朽</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190611121439_92378.jpg" alt=""></a>
+						<p>跳洞</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190611041834_40813.jpg" alt=""></a>
+						<p>为红荷赞歌</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/20190610045505_79098.jpg" alt=""></a>
+						<p>虫趣:夏日小精灵(七)</p>
+						<div class="div1">
+							<div class="t_left">
+								<a href="#">
+									<div class="t1">
+										<img src="./picture/1551953600_6413.jpg" alt=""/>
+									</div>
+									<div class="z1">独品63</div>
+								</a>
+							</div>
+							<div class="t_right">
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t3"></div>
+								</a>
+								<a href="#">
+									<div class="z2">0</div>
+									<div class="t2"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/1560348844_09743.jpg" alt=""></a>
+						<p>神鹰翱翔</p>
+
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/1560348844_09743.jpg" alt=""></a>
+						<p>神鹰翱翔</p>
+
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/1560348844_09743.jpg" alt=""></a>
+						<p>神鹰翱翔</p>
+					</div>
+					<div class="gallery_wl_phto_pic">
+						<a href="#"><img src="./picture/1560348844_09743.jpg" alt=""></a>
+						<p>神鹰翱翔</p>
+						</div>
+						<div style="float:right;margin-top:20px;text-align:center;">
+							<a class="a7" href="#">更多</a>
+						</div>
+					</div>
+				</div>
+	        </div>
+	    </div>
+		<!-- 表身五 -->	
+		<div class="wu_zddiv">
+			<div class="wu_ydiv">
+				<p class="wp1">热门游记 与你分享</p>
+				<p class="wp2">发现旅行之美，记录旅行点滴，保存美好回忆。把思想灌输，让灵魂融入，在这里展示最美好的自己</p>
+			</div>	
+			<div class="wu_ediv">
+				<div class="wu_123">
+				<div class="wu_zt">
+					<a href="#"><img src="./picture/20190604082936_49314.jpg" alt=""></a>
+				</div>
+				<div class="wu_zj">
+					<a href="#">
+						<p class="wu_pz1">朝花夕拾----鸟片拾零</p>
+						<p class="wu_pz2">作者 : 颂涛</p>
+					</a>
+					<div>
+						<div style="width:100%;height:70px;">
+						<div class="wu_logo">
+							<a href="#">
+								<img src="./picture/sysc2.jpg" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="#"><div class="wu_gf">官方</div></a>
+						</div>
+						<div>
+							<div class="wu_t2" ></div>
+						</div>
+						<div>
+							<div class="wu_z1">2019-06-04 11:17</div>
+						</div>
+						<div class="wu_t3"></div>
+						<div class="wu_z2">326</div>
+						<div class="wu_t4"></div>
+						<div class="wu_z3">0</div>
+						<div class="wu_t5"></div>
+						<div class="wu_z4">0</div>
+					</div>
+					<a class="a1" href="#"><div class="wu_z5">查看详情</div></a>
+					</div>
+				</div>
+				</div>
+				<div class="wu_sdiv">
+					<div class="wu_xg">
+					<div class="wu_z">
+						<div>
+							<a href="#">
+								<p class="p1">川甘青宁大西北环游…之青海</p>
+								<p class="p2">作者 : qian</p>
+							</a>
+						</div>
+						<div class="wu_logo1">
+							<a href="#">
+								<img src="./picture/sysc2.jpg" alt="">
+							</a>
+						</div>
+						<div>
+							<a href="#"><div class="wu_gf">官方</div></a>
+						</div>
+						<div>
+							<div class="wu_t2" ></div>
+						</div>
+						<div>
+							<div class="wu_z1">2019-05-30 06:22</div>
+						</div>
+						<div class="wu_t3"></div>
+						<div class="wu_z2">294</div>
+						<div class="wu_t4"></div>
+						<div class="wu_z3">2</div>
+						<div class="wu_t5"></div>
+						<div class="wu_z4">2</div>
+						<div style="float: left;margin-top:40px;">
+							<a style="color:#999;" href="#">
+								<div class="wu_ck1"">查看详情</div>
+						</a>
+					</div>
+					</div>
+					<div class="wu_y">
+						<a href="#">
+							<div>
+								<img style="width:355px;height:240px;" src="./picture/20190530121607_49570.jpg" alt="">
+							</div>
+						</a>
+					</div>
+
+					</div>
+
+                    </div>
+				     <div class="wu_wai1"">
+				         <div class="wu_zt1" >
+							<a href="#"><img src="./picture/20190611104514_45271.jpg" alt=""/></a>
+						</div>
+						 <div class="wu_yw1" style="margin-top:10px;">
+						 <div style="height:50px;">
+							 <div style="text-align: left;margin-bottom:20px ;"><a class="a5" href="#">去不丹寻找幸福的秘钥</a></div>
+						 </div>
+                          <div style="height:50px;">
+							  <div style="text-align: left;margin:0 0 20px 30px;";><a class="a6" href="#">不丹,梵文的意思是"西藏的边陲",也被称为"雷龙之地"</a></div>
+						  </div>
+                          <div style="height:50px;">
+						 <div>
+							 <div class="wu_logo1"><a href="#"><img src="./picture/home.jpg" alt=""></a></div>
+							 <div><a href="#"><div class="wu_gf">李淑芳</div></a></div>
+							 <div><div class="wu_t2" ></div></div>
+							 <div><div class="wu_z1">2019-06-11 03:15</div></div>
+							 <div class="wu_t3"></div>
+							 <div class="wu_z2">378</div>
+							 <div class="wu_t4"></div>
+							 <div class="wu_z3">0</div>
+							 <div class="wu_t5"></div>
+							 <div class="wu_z4">0</div>
+						</div>
+						  </div>
+							 <div>
+								 <a style="color:#999;" href="#">
+									 <div class="wu_ck1"">查看详情</div>
+								 </a>
+							 </div>
+                          </div>
+                             </div>
+                           <div class="wu_zhd" ">
+                               <div class="wu_zhdz">
+								   <div style="float: left;margin-bottom:20px;">
+									   <a class="zha1" href="#">即将消失的共和村鸳鸯楼</a>
+								   </div>
+								   <div style="float: left;margin-bottom: 20px;">
+									   <a class="zha2" href="#">
+										  成都市红瓦寺街18号是川大教工宿舍区家属院，而院内的鸳鸯楼则成了网红名声远扬。鸳鸯楼是上个世纪七十年代拆除院内1、2幢而
+									   </a>
+								   </div>
+
+								   <div style="width:100px;">
+									   <div class="wu_logo2">
+										   <a href="#">
+											   <img src="./picture/1557194358_7633.jpg" alt="">
+										   </a>
+									   </div>
+									   <a href="#"><div class="wu_gf">哈</div></a>
+								   </div>
+								   <div>
+									   <div class="wu_t2" ></div>
+								   </div>
+
+								   <div>
+									   <div class="wu_z1">2019-05-07 10:18</div>
+								   </div>
+								   <div class="wu_t3"></div>
+								   <div class="wu_z2">205</div>
+								   <div class="wu_t4"></div>
+								   <div class="wu_z3">3</div>
+								   <div class="wu_t5"></div>
+								   <div class="wu_z4">0</div>
+								   <div>
+									   <div style="float:left;width:70%;margin-top:30px;">
+										   <a style="color:#999;" href="#">
+											<div class="wu_ck1"">查看详情</div>
+									   </a>
+                                      </div>
+                                   </div>
+							   </div>
+                                    <div>
+										<div style="float:right;width:320px;">
+											<img style="width:180px;heigth:240px;" src="./picture/20190507041627_13732.jpg" alt=""/>
+										</div>
+									</div>
+									 </div>
+             							<div style="100%;float:right;">
+	   										<a class="a7" href="#">更多</a>
+   										</div>
+								   </div>
+ 								</div>
+                            <!-- 表身6-->
+						<div class="liu_zw">
+							<div class="liu_l1">
+								<div style="text-align:center;"><p style="color:#333;font-size:25px;">精彩视频 你我共享</p></div>
+								<div style="text-align:center;"><p style="color:#666;font-size:14px;">在这里，发现基于共同兴趣的同好；鼓励原创和分享精神；除了美好的摄影和技能，我们更在意影像背后价值观的认同。</p></div>
+								<div>
+								<div class="liu_l2">
+									<div style="width:432px;height:300px;">
+										<a href="#"><img src="./picture/1.png" alt=""/></a>
+									</div>
+									<div style="width:432px;height:300px;">
+										<a href="#"><img src="./picture/1.png" alt=""/></a>
+									</div>
+									<div style="width:432px;height:300px;">
+										<a href="#"><img src="./picture/1.png" alt=""/></a>
+									</div>
+									</div>
+									<div style="100%;float:right;text-align:center;">
+										<a class="a8" href="#">更多</a>
+									</div>
+								</div>
+							</div>
+						</div>
+    					<!-- 表身6-->
+   						<div class="liu_yd">
+							<div class="liu_ed">
+								<div style="text-align: center;">
+									<p class="liu_p1">镜头世界 谁与争锋</p>
+									<p class="liu_p2">我们要做这个时代的见证者，用镜头记录我们看到的大千世界。“把生活中稍纵即逝的平凡转化为不朽的视觉图像”是我们不懈的追求。在这里，我们追寻梦想，做个快乐的摄影家！</p>
+								</div>
+								<div style="margin:60px 0;">
+									<a href="#">
+										<img  src="./picture/20181218073713_47803.jpg" alt=""/>
+									</a>
+									<div style="100%;float:right;text-align:center;">
+										<a  class="a8" href="#">更多</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+   					<!--表身7 -->
+   						<div class="qi_yd">
+							<div class="qi_ed">
+								<div class="qi_sd">
+									<p class="qi_p1">热门旅游 等你参与</p>
+									<p class="qi_p2">摄影师，一直在路上！ 一次旅行，让自己在千姿的视野里创造出奇迹，让镜头在晨曦中洒满光影。你要到访的景色无论何时、无论何地，让我们带你领略，去探索、去欣赏……...</p>
+								</div>
+								<div class="qi_sd1">
+									<a class="a1" href="#">国内</a>
+									<a class="a1" href="#">国外</a>
+									<a class="a1" href="#">深度游</a>
+									<a class="a1" href="#">包车定制</a>
+									<a class="a1" href="#">各类活动</a>
+								</div>
+								<div class="qi_wd">
+									<div class="qi_ld">
+										<ul>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190304070023_84992.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 乌鲁木齐</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																绝色江布拉克、西天山摄影团
+															</p>
+															<p>2019年8月10日至2019年8月20日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">5800.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">183次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190514110256_38078.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 北京</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																巴尔干半岛、中东欧六国深...
+															</p>
+															<p>2019年8月15日至2019年9月20日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">28900.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">869次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190513094725_11419.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 广州</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																肯尼亚野生动物深度摄影团
+															</p>
+															<p>2019年7月27日至2019年8月8日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">29900.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">644次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li >
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190514105743_56820.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 乌鲁木齐</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																神秘罗布泊探险摄影团
+															</p>
+															<p>2019年9月6日至2019年9月15日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">19600.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">215次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190604100811_34016.png" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 成都</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																理塘赛马节、秘境措卡湖 色...
+															</p>
+															<p>2019年7月31日至2019年8月12日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">6900.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">312次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190315044603_42857.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 乌鲁木齐</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																北疆金秋摄影团
+															</p>
+															<p>2019年9月21日至2019年10月1日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">5900.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">194次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190517081428_58279.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 西宁</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																行摄大美青海——翡翠湖、...
+															</p>
+															<p>2019年7月10日至2019年7月17日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">4580.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">543次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+											</li>
+											</li>
+											<li>
+												<div class="qi_qd">
+													<a href="#" >
+														<img class="qi_i1" src="./picture/20190521115712_96495.jpg" alt=""/>
+													</a>
+													<div class="qi_bd">
+														<a href="#">
+															<div class="qi_jd">
+																<img class="qi_i2" src="./picture/logo.png" alt=""/>
+															</div>
+															<div class="qi_q1">
+																<a href="#"><p class="qi_p3">官方</p></a>
+															</div>
+														</a>
+														<div class="qi_q2">
+															<div class="qi_q3">
+																<a href="#">
+																	<span>0</span>
+																</a>
+															</div>
+														</div>
+													</div>
+													<div class="qi_q4">
+														<p>出发地 | 乌鲁木齐</p>
+													</div>
+													<div class="qi_q5">
+														<a href="#">
+															<p class="qi_p4">
+																<span>摄影游</span>
+																穿越独库公路最美景观道摄...
+															</p>
+															<p>2019年7月10日至2019年7月19日</p>
+															<p class="qi_p6">
+																<b class="b1">￥</b><b class="b2">5850.00</b><b class="b3">元/起</b>
+															<p class="qi_p5">295次游览</p>
+														</a>
+													</div>
+												</div>
+											<div>
+										</div>
+												<div style="100%;float:right;text-align:center;margin-top:15px;">
+													<a class="a8" href="#">更多</a>
+												</div>
+											</li>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					    	</div>
+					   </div>
+                    </div>
+                  </div>
+			</div>
+		</div>
+   <div class="bj_1">
+	   <div class="bj_2">
+		   <div class="bj_3">
+			   <p class="bj_p1">微信公众号</p>
+			   <div class="bj_4">
+				   <img style="width:100px;height:100px;" src="./picture/20190107094707_49630.png" alt=""/>
+			   </div>
+			</div>
+		   <ul>
+			   <li>
+				   <p class="bj_p2">我们的服务</p>
+				  <a href="#">
+					   <p class="bj_p3">包车.租车</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">摄影游</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">深度游</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">自驾游</p>
+				   </a>
+			   </li>
+			   <li>
+				   <p class="bj_p2">网站</p>
+				   <a href="#">
+					   <p class="bj_p3">作品</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">游记</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">斗图活动</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">视频</p>
+				   </a>
+			   </li>
+			   <li>
+				   <p class="bj_p2">积分与奖励规则</p>
+				   <a href="#">
+					   <p class="bj_p3">关于我们</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">联系我们</p>
+				   </a>
+				   <a href="#">
+					   <p class="bj_p3">帮助</p>
+				   </a>
+			   </li>
+			   <li>
+				   <p class="bj_p2">加入我们</p>
+				   <a href="#">
+					   <p class="bj_p3">加入我们</p>
+				   </a>
+			   </li>
+		   </ul>
+
+	   </div>
+	   <div class="bj_5">
+			<div class="bj_6">
+				技术支持 : 华呈科技
+				<span class="s2">©2018西部摄影网 all rights reserved.</span>
+				<span class="s1">蜀ICP备14013534</span>
+			</div>
+		<div class="ygd">
+			<div class="ygd1">
+				<ul>
+					<li><a class="aaa1" href="#"><span class="ss1"></span></a></li>
+					<li class="qq">
+						<a href="#"><span class="ss2"></span></a>
+						<div class="khqq">
+							<p>在线客户QQ : 10001</p>
+						</div>
+					</li>
+					<li class="dh">
+						<a href="#"><span class="ss3"></span></a>
+						<div class="ycdh">
+							<div class="dh_t"></div>
+							<div class="dh_z">服务热线 : 110</div>
+						</div>
+					</li>
+					<li class="wxlogo">
+						<a href="#"><span class="ss4"></span></a>
+						<div class="yc_wx">
+							<img src="./picture/20190107094707_49630.png" alt=""/>
+							<p>微信公众号</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	   </div>
+	</div>
+
+   </div>
+ </body>
+</html>
+
