@@ -1,0 +1,250 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #f8f9fa;
+}
+
+
+/*��ͷ*/
+
+.header_bg_active {
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    box-shadow: 0 0 5px 1px #ddd;
+}
+
+.nav_wide {
+    width: 1800px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.nav_left {
+    width: 752px;
+    height: 70px;
+    float: left;
+}
+
+.nav_right {
+    height: 70px;
+    float: right;
+}
+
+.nav_logo {
+    width: 90px;
+    height: 32px;
+    line-height: 70px;
+    float: left;
+    margin: 11px 60px 0 0;
+}
+
+.nav_logo img {
+    height: 50px;
+    display: block;
+}
+
+.header_bg_nav_wide ul {
+    height: 70px;
+    float: left;
+    margin: 0;
+    line-height: 70px;
+}
+
+div.header_bg_nav_wide ul {
+    z-index: 999;
+}
+
+div.btcd1 ul li {
+    box-sizing: border-box;
+}
+
+div.btcd2 ul li {
+    box-sizing: border-box;
+}
+
+.header_bg_nav_wide>ul>li {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.header_bg_nav_wide>ul>li>a {
+    display: block;
+    font-size: 16px;
+    color: #666;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.header_bg_nav_wide>ul>li>a:hover {
+    background: #ddd;
+}
+
+.nav_right .pro_search_input {
+    width: 195px;
+    height: 39px;
+    padding: 0;
+    display: block;
+    float: left;
+    line-height: 39px;
+    background: #ddd;
+    outline: none;
+    border: 0;
+    padding-left: 15px;
+    color: #666;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.pro_search_but {
+    width: 29px;
+    height: 39px;
+    background: #ddd url(../picture/search2.png) no-repeat center;
+    background-size: 80%;
+    float: left;
+    border-radius: 0 5px 5px 0;
+}
+
+.nav_right ul {
+    height: 70px;
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_right ul li {
+    height: 70px;
+    float: left;
+}
+
+a.dl,
+a.zc {
+    color: #666;
+    font-size: 18px;
+    padding: 0;
+    border: 0;
+    margin-left: 20px;
+}
+
+.pro_search_input,
+.pro_search_but {
+    margin-top: 16px;
+}
+
+.lcon_div {
+    width: 20px;
+    height: 70px;
+    float: left;
+    background: url(./picture/top_coin1.png) no-repeat center;
+    margin: 0 5px 0 40px;
+}
+
+p.xcx {
+    float: left;
+    color: #333;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+div.yctlogo {
+    width: 95px;
+    height: 100px;
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+li.l1:hover div.yctlogo {
+    display: block;
+}
+
+div.yctlogo img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+}
+
+div.btcd1 {
+    width: 200px;
+    height: 270px;
+    background: #fff;
+    border-top: 4px solid #000;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-radius: 4px;
+    z-index: 999;
+    box-sizing: border-box;
+    display: none;
+}
+
+div.btcd1 li {
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    margin-top: 4px;
+    line-height: 40px;
+}
+
+div.btcd1 ul li a,
+div.btcd2 ul li a {
+    color: #666;
+    width: 100%;
+    display: inline-block;
+}
+
+div.btcd1 ul li:hover {
+    background: #ddd;
+}
+
+li.zp:hover div.btcd1 {
+    display: block;
+}
+
+div.btcd2 {
+    width: 200px;
+    height: 230px;
+    background: #fff;
+    border-top: 4px solid #000;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    border-radius: 4px;
+    z-index: 999;
+    box-sizing: border-box;
+    display: none;
+}
+
+div.btcd2 li {
+    height: 40px;
+    width: 200px;
+    padding-left: 20px;
+    margin-top: 4px;
+    line-height: 40px;
+}
+
+div.btcd2 ul li:hover {
+    background: #ddd;
+}
+
+li.ly:hover div.btcd2 {
+    display: block;
+}

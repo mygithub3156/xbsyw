@@ -1,0 +1,148 @@
+div.right_p {
+    width: 70px;
+    height: 240px;
+    position: fixed;
+    right: 20px;
+    bottom: 85px;
+}
+
+div.f_right {
+    width: 44px;
+    height: 100%;
+    float: right;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    width: 44px;
+    height: 44px;
+    background: #d9dbe0;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+ul li:before {
+    content: "";
+    display: table;
+}
+
+ul li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+span.s1,
+span.s2,
+span.s3,
+span.s4 {
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: url(../picture/side_icon.png) no-repeat -130px 0;
+}
+
+span.s2,
+span.s3,
+span.s4 {
+    width: 20px;
+    height: 20px;
+    background: url(../picture/suspension-bg.png) no-repeat 0 0;
+    margin: 11px 0 0 13px;
+}
+
+span.s3 {
+    background: url(../picture/suspension-bg.png) no-repeat -25px 0;
+    margin: 11px 0 0 13px;
+}
+
+span.s4 {
+    background: url(../picture/suspension-bg.png) no-repeat 1px -23px;
+    margin: 11px 0 0 13px;
+}
+
+div.wx_logo,
+div.phone_logo {
+    width: 225px;
+    height: 190px;
+    border: 1px solid #ddd;
+    position: absolute;
+    right: 50px;
+    bottom: -50px;
+    text-align: center;
+    background: #fff;
+    display: none;
+}
+
+div.wx_logo img {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+div.wx_logo p {
+    margin: 5px 0 0 0;
+    color: #999;
+    font-size: 14px;
+}
+
+div.phone_logo {
+    bottom: 0px;
+    right: 50px;
+}
+
+div.phone_logo1 span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    background: #ddd url(../picture/ridata_coin.png) no-repeat 18px 15px;
+    border-radius: 50%;
+    margin: 10px 0 0 30px;
+}
+
+div.phone_logo2 {
+    width: 150px;
+    height: 110px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    margin-left: 30px;
+}
+
+div.phone_logo2 p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+div.qq_logo {
+    width: 225px;
+    height: 74px;
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 163px;
+    right: 50px;
+    display: none;
+}
+
+div.qq_logo p {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+li.l4:hover div.wx_logo {
+    display: block;
+}
+
+li.l3:hover div.phone_logo {
+    display: block;
+}
+
+li.l2:hover div.qq_logo {
+    display: block;
+}

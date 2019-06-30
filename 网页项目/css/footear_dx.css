@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.footear_lv {
+    max-width: 100%;
+    min-width: 1350px;
+    background: #fff;
+    height: 86px;
+}
+
+div.footear_lv1 {
+    width: 1350px;
+    height: 86px;
+    margin: 0 auto;
+}
+
+div.footear_left {
+    float: left;
+}
+
+div.footear_right {
+    height: 86px;
+    line-height: 86px;
+    float: right;
+}
+
+div.footear_left a {
+    height: 86px;
+    line-height: 86px;
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    padding: 0 8px;
+}
+
+div.footear_right a {
+    margin-left: 20px;
+}

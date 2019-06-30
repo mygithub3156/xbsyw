@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.zp_max_w {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background: #f1f3f7;
+    overflow: hidden;
+}
+
+div.zp_min_dw {
+    max-width: 1350px;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+div.zp_bt {
+    width: 1350px;
+    text-align: center;
+    margin: 36px 0;
+}
+
+div.zp_bt ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.zp_bt>ul li {
+    width: 114px;
+    height: 114px;
+    background: url(../picture/20181221091929_87472.jpg) no-repeat;
+    text-align: center;
+    line-height: 114px;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+div.zp_bt>ul li.l2 {
+    background: url(../picture/20181221091938_86102.jpg) no-repeat;
+}
+
+div.zp_bt>ul li.l3 {
+    background: url(../picture/20181221091948_19681.jpg) no-repeat;
+}
+
+div.zp_bt>ul li.l4 {
+    background: url(../picture/20181221092000_23430.jpg) no-repeat;
+}
+
+div.zp_bt>ul li.l5 {
+    background: url(../picture/20190214071153_65997.jpg) no-repeat;
+}
+
+div.zp_bt>ul li.l6 {
+    background: url(../picture/20190214073216_74948.png) no-repeat;
+}
+
+div.zp_bt>ul li.l7 {
+    background: url(../picture/20181221092027_55881.jpg) no-repeat;
+}
+
+div.zp_bt>ul li a {
+    color: #000;
+    font-size: 18px;
+}
+
+div.top_bt {
+    width: 100%;
+    line-height: 65px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+div.top_bt span {
+    height: 100%;
+    display: inline-block;
+    color: #333;
+    font-size: 25px;
+}
+
+div.top_bt div {
+    width: 75px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto;
+}
+
+div.rm_zp {
+    width: 1350px;
+    margin: 30px auto 0;
+}
+
+div.rm_zp::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.rm_zp>div.t1 {
+    width: 24.55%;
+    height: 211px;
+    background: #d9dbe0;
+    float: left;
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+div.t1 a img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+div.t1 p {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 13px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+div.dd_1 {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
+    position: absolute;
+    bottom: -40px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+div.t1:hover div.dd_1 {
+    transform: translateY(-40px);
+}
+
+div.t1>div>div.d_left {
+    line-height: 40px;
+}
+
+div.t1>div>div.d_left div.d1 {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 5px 10px 0 10px;
+}
+
+div.d2 {
+    float: left;
+    color: #fff;
+    font-size: 13px;
+}
+
+div.d1 img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+div.d_right {
+    float: right;
+    line-height: 40px;
+}
+
+span.c1,
+span.c2 {
+    height: 100%;
+    padding: 0 10px 0 20px;
+    background: url(../picture/like_coin.png) no-repeat left;
+    color: #fff;
+}
+
+div.d_right span.c2 {
+    background: url(../picture/collection_coin.png) no-repeat left;
+}
+
+div.an_jz {
+    text-align: center;
+    margin: 25px 0;
+}
+
+div.an_jz:hover a.a1 {
+    color: #000;
+    border: 1px solid #000;
+}
+
+div.an_jz>a.a1 {
+    line-height: 52px;
+    color: #666;
+    font-size: 18px;
+    padding: 0 80px;
+    display: inline-block;
+    border: 1px solid #666;
+    border-radius: 35px;
+}
+
+div.s_zj {
+    text-align: center;
+    margin-top: 40px;
+}
+
+div.s_zj span {
+    color: #333;
+    font-size: 25px;
+    line-height: 65px;
+    display: inline-block;
+}
+
+div.s_zj>div {
+    width: 75px;
+    height: 3px;
+    background: #333;
+    margin: 0 auto;
+}
+
+div.zjzp_body {
+    width: 1350px;
+    height: 600px;
+    margin-top: 40px;
+    border: 1px solid red;
+}
